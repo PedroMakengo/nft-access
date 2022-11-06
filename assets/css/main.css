@@ -145,6 +145,28 @@ form {
   color: #5429ff;
 }
 
+.form__nft__access .form__control a {
+  border: 1px solid #d0d5dd;
+
+  display: flex;
+  height: var(--height-input);
+  border-radius: var(--border-radius-input);
+
+  justify-content: center;
+  align-items: center;
+
+  color: var(--text-title-color);
+
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
 .form__nft__access p {
   text-align: center;
+  margin-block: 2rem;
+}
+
+.form__nft__access p a {
+  text-decoration: none;
+  color: var(--bg-primary);
 }
