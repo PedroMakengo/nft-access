@@ -5,8 +5,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-primary: #5429ff;
+
+  --text-title-color: #344054;
+  --text-p-color: #667085;
+
+  --height-input: 44px;
+  --border-radius-input: 8px;
+}
+
+label,
 body {
-  background: #fcfdff;
+  background: #fff;
   font-family: "Inter", sans-serif;
 }
 
@@ -51,18 +62,89 @@ body {
   align-items: center;
   width: 60%;
 
-  height: 80%;
+  height: 100%;
 }
 
 .container .form__nft__access form {
   width: 100%;
 }
 
-.content__title {
-  background: red;
+.container .form__nft__access .content__title {
+  margin-bottom: 3rem;
+}
+
+.container .form__nft__access .content__title h2 {
+  font-size: 2.2rem;
+  color: var(--text-title-color);
+  font-weight: 700;
+
+  margin-bottom: 0.6rem;
+}
+
+.container .form__nft__access .content__title p {
+  color: var(--text-p-color);
 }
 
 form {
   width: 50%;
-  background: red;
+}
+
+.container .form__nft__access form label {
+  color: var(--text-title-color);
+}
+
+.container .form__nft__access form .form__control {
+  margin-top: 1rem;
+}
+
+.container .form__nft__access form .input__button {
+  border: 1px solid #d0d5dd;
+  border-radius: var(--border-radius-input);
+
+  display: flex;
+  justify-content: space-between;
+
+  height: var(--height-input);
+  margin-top: 0.5rem;
+}
+
+.container .form__nft__access form .input__button input {
+  width: 90%;
+  background: none;
+  border: 0;
+
+  padding-inline: 1rem;
+}
+
+.container .form__nft__access form .input__button button {
+  width: 10%;
+
+  border: 0;
+  background: none;
+}
+
+.container .form__nft__access form .form__control input[type="submit"] {
+  width: 100%;
+  background: var(--bg-primary);
+  height: var(--height-input);
+
+  border-radius: var(--border-radius-input);
+  border: 0;
+
+  color: white;
+}
+
+.container .form__nft__access form .form__control__remember {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.container .form__nft__access form .form__control__remember a {
+  text-decoration: none;
+  color: #5429ff;
+}
+
+.form__nft__access p {
+  text-align: center;
 }
