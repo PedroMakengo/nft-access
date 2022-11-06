@@ -170,3 +170,21 @@ form {
   text-decoration: none;
   color: var(--bg-primary);
 }
+
+@media (max-width: 760px) {
+  .banner__login {
+    display: none;
+  }
+
+  .container .form__login {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .container .form__nft__access {
+    width: 100%;
+  }
+}
