@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background: #fcfdff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+
+  padding: 1rem;
+}
+
+.container .banner__login {
+  width: 60%;
+
+  background-color: #cbcce8;
+  background-image: url(../img/DRIP_20.png);
+  background-size: 70%;
+  background-position: center;
+  border-radius: 40px;
+
+  background-repeat: no-repeat;
+}
