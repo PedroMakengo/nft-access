@@ -44,6 +44,7 @@ body {
 .container .form__login {
   width: 45%;
   align-items: center;
+  justify-content: flex-end;
 
   display: flex;
   flex-direction: column;
@@ -159,16 +160,21 @@ form {
 
   text-decoration: none;
   gap: 0.5rem;
+
+  margin-bottom: 1rem;
 }
 
 .form__nft__access p {
   text-align: center;
-  margin-block: 2rem;
 }
 
 .form__nft__access p a {
   text-decoration: none;
   color: var(--bg-primary);
+}
+
+.mobile__logo {
+  display: none;
 }
 
 @media (max-width: 760px) {
@@ -186,5 +192,32 @@ form {
 
   .container .form__nft__access {
     width: 100%;
+  }
+
+  .container .form__login .logo {
+    display: none;
+  }
+
+  .container .form__nft__access .content__title p {
+    text-align: left;
+  }
+
+  .container .form__login .mobile__logo {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .container .form__login .mobile__logo svg {
+    width: 240px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 820px) {
+  body {
+    background: red;
   }
 }
