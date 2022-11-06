@@ -84,6 +84,7 @@ body {
 
 .container .form__nft__access .content__title p {
   color: var(--text-p-color);
+  text-align: left;
 }
 
 form {
@@ -196,10 +197,6 @@ form {
 
   .container .form__login .logo {
     display: none;
-  }
-
-  .container .form__nft__access .content__title p {
-    text-align: left;
   }
 
   .container .form__login .mobile__logo {
