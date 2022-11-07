@@ -217,7 +217,7 @@ form {
 }
 
 @media (min-width: 820px) {
-  body {
+  /* body {
     background: red;
-  }
+  } */
 }
